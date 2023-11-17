@@ -45,7 +45,6 @@ const FilterBox=({getDateYear})=>{
      <select id="year" value={selectedYear} onChange={handleYearChange}>
         {
             years.map((year,index)=>{
-                console.log(typeof year)
                 return(
                     <option key={index} value={year}>
                         {year}

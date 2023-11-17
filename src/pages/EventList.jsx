@@ -3,12 +3,13 @@ import { eventList } from "../utils/EventDatabase";
 import Navigation from "../components/Navgation"
 
 const EventList =()=>{
+
  const renderEventCards =()=>{
       return eventList.map(({id,date,heading,location})=>{
           return ( <EventCard 
             key={id}
             id={id}
-            date={date.toString()}
+            date={date}
             heading={heading}
             location={location}
             />)
