@@ -1,15 +1,15 @@
-import {createBrowserRouter,RouterProvider} from "react-router-dom"
-import {routes} from "./routes/routes"
-import './App.css'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { routes } from "./routes/routes";
+import "./App.css";
 
-const router=createBrowserRouter(routes)
+const router = createBrowserRouter(routes);
 
-const App=()=>{
+const App = () => {
   return (
     <>
-     <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
